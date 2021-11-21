@@ -21,11 +21,16 @@
 	loadArticles();
 </script>
 
+<svelte:head>
+	<title>bbarbour.dev - Home</title>
+</svelte:head>
 <div class="hero">
 	<h1>My name is Brian.</h1>
 	<h2>I'm a Sofware Engineer and Javascript enthusiast.</h2>
 </div>
 <hr />
+<h3>About Me</h3>
+<p class="about-me">A cup of coffee and code is typically how I start my mornings. I'm fueled by self improvement and conquering new challenges. With ten years experience in the tech industry, learning has become my greatest habit. As a Javascript enthusiast, I've written millions of lines of the language. Through that discovering its many quirks and nuances, which I use to my advantage. The tools and tech stack I use everyday includes Node.js, Express, MongoDB, React, and React Native--but I also love other frameworks like Svelte Vue, Socket-io, and Fastify.</p>
 <h3>Articles I've Written</h3>
 <div class="articles">
 	{#if loadingArticles}
@@ -37,8 +42,10 @@
 			<Article {article} />
 		{/each}
 	{/if}
+	<div class="right">
+		<a href="/articles">View More...</a>
+	</div>
 </div>
-<h3>Personal Projects</h3>
 
 <style>
 	.hero {
@@ -71,5 +78,15 @@
 
 	.articles {
 		margin-bottom: 3rem;
+	}
+	
+	.about-me {
+		text-align: justify;
+		margin-bottom: 3rem;
+		line-height: 1.5rem;
+	}
+
+	.right {
+		text-align: right;
 	}
 </style>
