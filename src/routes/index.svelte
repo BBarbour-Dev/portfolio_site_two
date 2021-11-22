@@ -30,7 +30,20 @@
 </div>
 <hr />
 <h3>About Me</h3>
-<p class="about-me">A cup of coffee and code is typically how I start my mornings. I'm fueled by self improvement and conquering new challenges. With ten years experience in the tech industry, learning has become my greatest habit. As a Javascript enthusiast, I've written millions of lines of the language. Through that discovering its many quirks and nuances, which I use to my advantage. The tools and tech stack I use everyday includes Node.js, Express, MongoDB, React, and React Native--but I also love other frameworks like Svelte Vue, Socket-io, and Fastify.</p>
+<p class="about-me">
+	A cup of coffee and code is typically how I start my mornings. I'm fueled by self improvement and
+	conquering new challenges. With ten years experience in the tech industry, learning has become my
+	greatest habit.
+</p>
+<p class="about-me">
+	As a Javascript enthusiast, I've written millions of lines of the language. Through that
+	discovering its many quirks and nuances, which I use to my advantage. The tools and tech stack I
+	use everyday includes Node.js, Express, MongoDB, React, and React Native--but I also love other
+	frameworks like Svelte, Vue, Socket-io, and Fastify.
+</p>
+<div class="right">
+	<a href="/projects">View My Projects...</a>
+</div>
 <h3>Articles I've Written</h3>
 <div class="articles">
 	{#if loadingArticles}
@@ -43,7 +56,7 @@
 		{/each}
 	{/if}
 	<div class="right">
-		<a href="/articles">View More...</a>
+		<a href="/articles">View More Articles...</a>
 	</div>
 </div>
 
@@ -73,16 +86,16 @@
 		padding: 1rem;
 		border: 1px solid #4bffd8dc;
 		width: 250px;
-		margin-bottom: 2rem;
+		margin: 2rem 0;
 	}
 
 	.articles {
 		margin-bottom: 3rem;
 	}
-	
+
 	.about-me {
 		text-align: justify;
-		margin-bottom: 3rem;
+		margin-bottom: 1rem;
 		line-height: 1.5rem;
 	}
 

@@ -1,5 +1,5 @@
 <script>
-    import Loader from '../lib/Loader.svelte';
+	import Loader from '../lib/Loader.svelte';
 	import Article from '../lib/Article.svelte';
 
 	let loadingArticles = true;
@@ -19,6 +19,9 @@
 	loadArticles();
 </script>
 
+<svelte:head>
+	<title>bbarbour.dev - Articles</title>
+</svelte:head>
 <h1>Articles I've Written</h1>
 <div>
 	{#if loadingArticles}
@@ -33,10 +36,7 @@
 </div>
 
 <style>
-    h1 {
-        margin: 3rem 0;
-    }
-
+	h1 {
+		margin: 3rem 0;
+	}
 </style>
-
-
