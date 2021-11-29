@@ -4747,16 +4747,16 @@ var init_articles_3443506f = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/__layout-e67ae0a3.js
-var layout_e67ae0a3_exports = {};
-__export(layout_e67ae0a3_exports, {
+// .svelte-kit/output/server/chunks/__layout-30da74b1.js
+var layout_30da74b1_exports = {};
+__export(layout_30da74b1_exports, {
   default: () => _layout
 });
 var css$1, Navigation, css, _layout;
-var init_layout_e67ae0a3 = __esm({
-  ".svelte-kit/output/server/chunks/__layout-e67ae0a3.js"() {
+var init_layout_30da74b1 = __esm({
+  ".svelte-kit/output/server/chunks/__layout-30da74b1.js"() {
     init_shims();
-    init_app_49ccca75();
+    init_app_1fbfe7d5();
     css$1 = {
       code: "nav.svelte-48agaq.svelte-48agaq{display:flex;justify-content:space-between;flex-wrap:wrap}.home-link.svelte-48agaq.svelte-48agaq{letter-spacing:3px;font-weight:bold;flex:1}.nav-right.svelte-48agaq a.svelte-48agaq{padding:0.5rem}",
       map: null
@@ -4782,9 +4782,9 @@ var init_layout_e67ae0a3 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/error-011dc052.js
-var error_011dc052_exports = {};
-__export(error_011dc052_exports, {
+// .svelte-kit/output/server/chunks/error-8dfb85ec.js
+var error_8dfb85ec_exports = {};
+__export(error_8dfb85ec_exports, {
   default: () => Error2,
   load: () => load
 });
@@ -4792,10 +4792,10 @@ function load({ error: error2, status }) {
   return { props: { error: error2, status } };
 }
 var Error2;
-var init_error_011dc052 = __esm({
-  ".svelte-kit/output/server/chunks/error-011dc052.js"() {
+var init_error_8dfb85ec = __esm({
+  ".svelte-kit/output/server/chunks/error-8dfb85ec.js"() {
     init_shims();
-    init_app_49ccca75();
+    init_app_1fbfe7d5();
     Error2 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { status } = $$props;
       let { error: error2 } = $$props;
@@ -4815,12 +4815,12 @@ ${error2.stack ? `<pre>${escape(error2.stack)}</pre>` : ``}`;
   }
 });
 
-// .svelte-kit/output/server/chunks/Article-a9fcf063.js
+// .svelte-kit/output/server/chunks/Article-060d99cb.js
 var css$12, Loader, css2, Article;
-var init_Article_a9fcf063 = __esm({
-  ".svelte-kit/output/server/chunks/Article-a9fcf063.js"() {
+var init_Article_060d99cb = __esm({
+  ".svelte-kit/output/server/chunks/Article-060d99cb.js"() {
     init_shims();
-    init_app_49ccca75();
+    init_app_1fbfe7d5();
     css$12 = {
       code: ":root{--size:3px}.loader.svelte-1mc0zpb{background-color:inherit;overflow:hidden;width:100%;height:100%;display:flex;align-items:center;align-content:center;justify-content:center;z-index:100000;margin-top:3rem}.loader_element.svelte-1mc0zpb{border-radius:100%;border:var(--size) solid #4bffd8dc;margin:calc(var(--size) * 2)}.loader_element.svelte-1mc0zpb:nth-child(1){animation:svelte-1mc0zpb-preloader 0.6s ease-in-out alternate infinite}.loader_element.svelte-1mc0zpb:nth-child(2){animation:svelte-1mc0zpb-preloader 0.6s ease-in-out alternate 0.2s infinite}.loader_element.svelte-1mc0zpb:nth-child(3){animation:svelte-1mc0zpb-preloader 0.6s ease-in-out alternate 0.4s infinite}@keyframes svelte-1mc0zpb-preloader{100%{transform:scale(2)}}",
       map: null
@@ -4852,17 +4852,17 @@ var init_Article_a9fcf063 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/index-672aeec1.js
-var index_672aeec1_exports = {};
-__export(index_672aeec1_exports, {
+// .svelte-kit/output/server/chunks/index-6c3af122.js
+var index_6c3af122_exports = {};
+__export(index_6c3af122_exports, {
   default: () => Routes
 });
 var css3, Routes;
-var init_index_672aeec1 = __esm({
-  ".svelte-kit/output/server/chunks/index-672aeec1.js"() {
+var init_index_6c3af122 = __esm({
+  ".svelte-kit/output/server/chunks/index-6c3af122.js"() {
     init_shims();
-    init_app_49ccca75();
-    init_Article_a9fcf063();
+    init_app_1fbfe7d5();
+    init_Article_060d99cb();
     css3 = {
       code: ".hero.svelte-1f2ycfa{margin:5rem 0;background-image:url('/endless-constellation.svg');min-height:16rem;display:flex;flex-direction:column;justify-content:center;padding:1rem;border:1px solid #4bffd8dc}h2.svelte-1f2ycfa{margin-top:1rem;color:#706f7c}hr.svelte-1f2ycfa{margin:3rem 0;border:1px solid #6584ac}h3.svelte-1f2ycfa{padding:1rem;border:1px solid #4bffd8dc;width:250px;margin:2rem 0}.articles.svelte-1f2ycfa{margin-bottom:3rem}.about-me.svelte-1f2ycfa{text-align:justify;margin-bottom:1rem;line-height:1.5rem}.right.svelte-1f2ycfa{text-align:right}",
       map: null
@@ -4907,17 +4907,17 @@ var init_index_672aeec1 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/articles-73f6a3f6.js
-var articles_73f6a3f6_exports = {};
-__export(articles_73f6a3f6_exports, {
+// .svelte-kit/output/server/chunks/articles-d421a9e6.js
+var articles_d421a9e6_exports = {};
+__export(articles_d421a9e6_exports, {
   default: () => Articles
 });
 var css4, Articles;
-var init_articles_73f6a3f6 = __esm({
-  ".svelte-kit/output/server/chunks/articles-73f6a3f6.js"() {
+var init_articles_d421a9e6 = __esm({
+  ".svelte-kit/output/server/chunks/articles-d421a9e6.js"() {
     init_shims();
-    init_app_49ccca75();
-    init_Article_a9fcf063();
+    init_app_1fbfe7d5();
+    init_Article_060d99cb();
     css4 = {
       code: "h1.svelte-apa6a8{margin:3rem 0}",
       map: null
@@ -4945,16 +4945,16 @@ var init_articles_73f6a3f6 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/projects-567e9028.js
-var projects_567e9028_exports = {};
-__export(projects_567e9028_exports, {
+// .svelte-kit/output/server/chunks/projects-ef907109.js
+var projects_ef907109_exports = {};
+__export(projects_ef907109_exports, {
   default: () => Projects
 });
 var css5, Projects;
-var init_projects_567e9028 = __esm({
-  ".svelte-kit/output/server/chunks/projects-567e9028.js"() {
+var init_projects_ef907109 = __esm({
+  ".svelte-kit/output/server/chunks/projects-ef907109.js"() {
     init_shims();
-    init_app_49ccca75();
+    init_app_1fbfe7d5();
     css5 = {
       code: "h1.svelte-pjbsc2.svelte-pjbsc2{margin:3rem 0}.project.svelte-pjbsc2.svelte-pjbsc2{display:flex;justify-content:space-evenly;padding:1rem;border:1px solid #4bffd8dc;margin-bottom:1rem}.text.svelte-pjbsc2.svelte-pjbsc2{width:400px;margin-left:1rem}.text.svelte-pjbsc2 h3.svelte-pjbsc2{margin-bottom:1rem}.text.svelte-pjbsc2 p.svelte-pjbsc2{margin-bottom:1rem}.image.svelte-pjbsc2 img.svelte-pjbsc2{width:250px;height:auto}",
       map: null
@@ -4994,7 +4994,7 @@ ${each(projects, (project) => `<div class="${"project svelte-pjbsc2"}"><div clas
   }
 });
 
-// .svelte-kit/output/server/chunks/app-49ccca75.js
+// .svelte-kit/output/server/chunks/app-1fbfe7d5.js
 function get_single_valued_header(headers, key) {
   const value = headers[key];
   if (Array.isArray(value)) {
@@ -6318,8 +6318,8 @@ function render(request, {
   return respond({ ...request, host }, options, { prerender });
 }
 var __accessCheck, __privateGet, __privateAdd, __privateSet, _map, chars, unsafeChars, reserved, escaped$1, objectProtoOwnPropertyNames, subscriber_queue, escape_json_string_in_html_dict, escape_html_attr_dict, s$1, s, absolute, ReadOnlyFormData, current_component, escaped, missing_component, on_destroy, css6, Root, base, assets, user_hooks, template, options, default_settings, empty, manifest, get_hooks, module_lookup, metadata_lookup;
-var init_app_49ccca75 = __esm({
-  ".svelte-kit/output/server/chunks/app-49ccca75.js"() {
+var init_app_1fbfe7d5 = __esm({
+  ".svelte-kit/output/server/chunks/app-1fbfe7d5.js"() {
     init_shims();
     __accessCheck = (obj, member, msg) => {
       if (!member.has(obj))
@@ -6486,7 +6486,7 @@ ${``}`;
     default_settings = { paths: { "base": "", "assets": "" } };
     empty = () => ({});
     manifest = {
-      assets: [{ "file": ".DS_Store", "size": 6148, "type": null }, { "file": "endless-constellation.svg", "size": 1356, "type": "image/svg+xml" }, { "file": "favicon.png", "size": 43744, "type": "image/png" }, { "file": "hack.png", "size": 2813095, "type": "image/png" }, { "file": "hunt.png", "size": 2182947, "type": "image/png" }, { "file": "saga.png", "size": 2157028, "type": "image/png" }],
+      assets: [{ "file": "endless-constellation.svg", "size": 1356, "type": "image/svg+xml" }, { "file": "favicon.png", "size": 43744, "type": "image/png" }, { "file": "hack.png", "size": 2813095, "type": "image/png" }, { "file": "hunt.png", "size": 2182947, "type": "image/png" }, { "file": "saga.png", "size": 2157028, "type": "image/png" }],
       layout: "src/routes/__layout.svelte",
       error: ".svelte-kit/build/components/error.svelte",
       routes: [
@@ -6526,11 +6526,11 @@ ${``}`;
       externalFetch: hooks.externalFetch || fetch
     });
     module_lookup = {
-      "src/routes/__layout.svelte": () => Promise.resolve().then(() => (init_layout_e67ae0a3(), layout_e67ae0a3_exports)),
-      ".svelte-kit/build/components/error.svelte": () => Promise.resolve().then(() => (init_error_011dc052(), error_011dc052_exports)),
-      "src/routes/index.svelte": () => Promise.resolve().then(() => (init_index_672aeec1(), index_672aeec1_exports)),
-      "src/routes/articles.svelte": () => Promise.resolve().then(() => (init_articles_73f6a3f6(), articles_73f6a3f6_exports)),
-      "src/routes/projects.svelte": () => Promise.resolve().then(() => (init_projects_567e9028(), projects_567e9028_exports))
+      "src/routes/__layout.svelte": () => Promise.resolve().then(() => (init_layout_30da74b1(), layout_30da74b1_exports)),
+      ".svelte-kit/build/components/error.svelte": () => Promise.resolve().then(() => (init_error_8dfb85ec(), error_8dfb85ec_exports)),
+      "src/routes/index.svelte": () => Promise.resolve().then(() => (init_index_6c3af122(), index_6c3af122_exports)),
+      "src/routes/articles.svelte": () => Promise.resolve().then(() => (init_articles_d421a9e6(), articles_d421a9e6_exports)),
+      "src/routes/projects.svelte": () => Promise.resolve().then(() => (init_projects_ef907109(), projects_ef907109_exports))
     };
     metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-6f80eea7.js", "css": ["assets/pages/__layout.svelte-45ead6c6.css"], "js": ["pages/__layout.svelte-6f80eea7.js", "chunks/vendor-8cf05b9e.js"], "styles": [] }, ".svelte-kit/build/components/error.svelte": { "entry": "error.svelte-8747adf3.js", "css": [], "js": ["error.svelte-8747adf3.js", "chunks/vendor-8cf05b9e.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-56c0fe0c.js", "css": ["assets/pages/index.svelte-8706dd2e.css", "assets/Article-1dea97c9.css"], "js": ["pages/index.svelte-56c0fe0c.js", "chunks/vendor-8cf05b9e.js", "chunks/Article-572db915.js"], "styles": [] }, "src/routes/articles.svelte": { "entry": "pages/articles.svelte-ec9534e7.js", "css": ["assets/pages/articles.svelte-5a3453d1.css", "assets/Article-1dea97c9.css"], "js": ["pages/articles.svelte-ec9534e7.js", "chunks/vendor-8cf05b9e.js", "chunks/Article-572db915.js"], "styles": [] }, "src/routes/projects.svelte": { "entry": "pages/projects.svelte-603fa211.js", "css": ["assets/pages/projects.svelte-34ebf6a1.css"], "js": ["pages/projects.svelte-603fa211.js", "chunks/vendor-8cf05b9e.js"], "styles": [] } };
   }
@@ -6544,7 +6544,7 @@ init_shims();
 
 // .svelte-kit/output/server/app.js
 init_shims();
-init_app_49ccca75();
+init_app_1fbfe7d5();
 
 // .svelte-kit/netlify/entry.js
 init();
