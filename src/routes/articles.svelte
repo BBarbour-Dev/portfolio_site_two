@@ -6,7 +6,7 @@
 	let articles = [];
 
 	async function loadArticles() {
-		const data = await fetch('https:/bbarbour.dev/api/articles', {
+		const data = await fetch('https://bbarbour.dev/api/articles', {
 			method: 'GET'
 		});
 		const all = await data.json();
