@@ -1,10 +1,10 @@
 <script>
-	import Navigation from '../lib/Navigation.svelte';
+	import Navbar from '../lib/Navbar.svelte';
 </script>
 
 <main>
 	<div class="content-wrapper">
-		<Navigation />
+		<Navbar />
 		<slot />
 	</div>
 </main>
