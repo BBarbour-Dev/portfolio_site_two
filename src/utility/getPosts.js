@@ -16,15 +16,16 @@ async function fetchArticlesByMe(page) {
 			API_KEY: devToApiKey
 		}
 	});
-	console.log(data.json);
 	return await data.json();
 }
 
 export async function getPosts({ limit, slug }) {
+	console.log('getPosts called');
 	let posts = [];
 	let page = 1;
 
 	for (let i = 0; page >= 1; i++) {
+		console.log('inside for loop');
 		const currentPosts = await fetchArticlesByMe(page);
 		if (currentPosts.length === 30) {
 			posts = [...posts, ...currentPosts];
