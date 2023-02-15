@@ -1,31 +1,18 @@
 <script>
 	import Navbar from '../lib/Navbar.svelte';
+	import Footer from '../lib/Footer.svelte';
+	import '../styles/global.css';
 </script>
 
 <main>
+	<Navbar />
 	<div class="content-wrapper">
-		<Navbar />
 		<slot />
 	</div>
+	<Footer />
 </main>
 
 <style>
-	:global(body) {
-		background-color: #030c2e;
-		color: #6584ac;
-	}
-
-	:global(a) {
-		color: #4bffd8dc;
-	}
-
-	:global(*) {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-		font-family: Helvetica;
-	}
-
 	main {
 		display: flex;
 		flex-direction: column;
@@ -36,9 +23,15 @@
 		padding: 1rem;
 	}
 
-	@media (min-width: 640px) {
+	@media (min-width: 900px) {
 		.content-wrapper {
-			width: 50%;
+			width: 75%;
+		}
+	}
+
+	@media screen and (max-width: 720px) {
+		.content-wrapper {
+			overflow-x: hidden;
 		}
 	}
 </style>
