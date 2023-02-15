@@ -10,6 +10,7 @@ const md = Markdown({
 });
 
 async function fetchArticlesByMe(page) {
+	console.log('fetch articles called');
 	const data = await fetch(endpointUrl + `?page=${page}`, {
 		method: 'GET',
 		headers: {
