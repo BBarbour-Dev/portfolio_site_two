@@ -10,8 +10,6 @@ const md = Markdown({
 });
 
 async function fetchArticlesByMe(page) {
-	console.log('fetch articles called');
-	console.log('api key', devToApiKey);
 	const data = await fetch(endpointUrl + `?page=${page}`, {
 		method: 'GET',
 		headers: {
@@ -23,20 +21,16 @@ async function fetchArticlesByMe(page) {
 }
 
 export async function getPosts({ limit, slug }) {
-	console.log('getPosts called');
 	let posts = [];
 	let page = 1;
 
 	for (let i = 0; page >= 1; i++) {
-		console.log('inside for loop');
 		const currentPosts = await fetchArticlesByMe(page);
 		if (currentPosts.length === 30) {
 			posts = [...posts, ...currentPosts];
-			console.log('posts added:', posts.length);
 			page += 1;
 		} else {
 			posts = [...posts, ...currentPosts];
-			console.log('posts added:', posts.length);
 			break;
 		}
 	}

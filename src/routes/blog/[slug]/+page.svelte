@@ -17,35 +17,35 @@
 </p>
 <p class="dev">Orginally posted on <a href={post.url}>dev.to</a>.</p>
 <article class="post-body">
-		{@html post.body}
-        <div class="links">
-        <a href="#top">Return to Top</a> &middot;
-<a href="/blog">Return To Blog</a>
-</div>
+	{@html post.body}
+	<div class="links">
+		<a href="#top">Return to Top</a> &middot;
+		<a href="/blog">Return To Blog</a>
+	</div>
 </article>
+
 <style>
 	h1 {
 		margin-top: 3rem;
-        line-height: 3rem;
-        width: 75%;
-        text-underline-offset: 0%;
+		line-height: 3rem;
+		width: 75%;
+		text-underline-offset: 0%;
 	}
 
-    article {
-        margin-top: 3rem;
-    }
+	article {
+		margin-top: 3rem;
+	}
 
-    .dev {
-        margin-top: .5rem;
-    }
+	.dev {
+		margin-top: 0.5rem;
+	}
 
 	.posted {
 		margin-top: 1.5rem;
 	}
 
-    .links {
-        margin-top: 3rem;
-        text-align: center;
-    }
-
+	.links {
+		margin-top: 3rem;
+		text-align: center;
+	}
 </style>
