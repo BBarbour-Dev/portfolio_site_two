@@ -10,12 +10,12 @@
 	</div>
 	<div class="nav-right">
 		{#each links as link}
-				<a
-					class={link.action ? 'resume-button' : ''}
-					href={link.href}
-					target={link.external ? '_blank' : ''}
-					rel={link.external ? 'noopener noreferrer' : ''}>{link.text}</a
-				>
+			<a
+				class={link.action ? 'resume-button' : ''}
+				href={link.href}
+				target={link.external ? '_blank' : ''}
+				rel={link.external ? 'noopener noreferrer' : ''}>{link.text}</a
+			>
 		{/each}
 	</div>
 </nav>

@@ -10,20 +10,26 @@
 <div class="hamburger" style={`${drawerOpen ? 'visibility: hidden;' : ''}`}>
 	<button on:click={toggleDrawer}>&#9776;</button>
 </div>
+
 <nav
 	class="mobile-nav"
 	on:click={toggleDrawer}
-	style={`${drawerOpen ? 'visibility: visible; width: 50%;' : ''}`}
+	on:keydown={toggleDrawer}
+	style={`${drawerOpen ? 'visibility: visible; width: 350px;' : ''}`}
 >
 	{#if drawerOpen}
 		<div class="drawer">
 			<button class="close">&times;</button>
 			<div class="mobile-logo">
-				<a href="/">bbarbour.dev</a>
+				<span>bbarbour.dev</span>
 			</div>
-			<div class="drawer-links">
+			<div>
+				<div class="mobile-logo little">
+					<span>Main Menu</span>
+				</div>
+				<div class="link"><a href="/">Home</a></div>
 				{#each links as link}
-					<div class="links">
+					<div class="link">
 						<a
 							href={link.href}
 							target={link.external ? '_blank' : ''}
@@ -51,7 +57,7 @@
 	.hamburger button {
 		height: 4rem;
 		width: 4rem;
-		background-color: #030c2e;
+		background-color: var(--background);
 		border: 3px solid #4bffd8dc;
 		font-size: 2.25rem;
 		color: var(--primary);
@@ -69,11 +75,10 @@
 	}
 
 	.mobile-logo {
-		padding: 0;
-		margin-bottom: 1rem;
+		padding: 1rem;
 	}
 
-	.mobile-logo a {
+	.mobile-logo span {
 		font-size: 0.8rem;
 		text-align: center;
 		font-family: 'Press Start 2P';
@@ -85,17 +90,13 @@
 		text-shadow: 1px 1px #8693a4;
 	}
 
-	.mobile-logo a:hover {
-		color: var(--white);
-	}
-
-	.links {
+	.link {
 		display: flex;
 		justify-content: center;
 		align-items: flex-end;
 	}
 
-	.links a {
+	.link a {
 		margin: 0.5rem 0;
 		text-align: center;
 		font-size: 1.25rem;
@@ -103,8 +104,12 @@
 		display: block;
 	}
 
-	.links a:hover {
+	.link a:hover {
 		color: #ffffff;
+	}
+
+	.little span {
+		font-size: 0.65rem;
 	}
 
 	.close {
@@ -121,7 +126,7 @@
 	.mobile-nav {
 		display: none;
 		visibility: hidden;
-		height: 275px;
+		height: 350px;
 		width: 0%;
 		position: fixed;
 		z-index: 1;

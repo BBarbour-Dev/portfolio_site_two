@@ -16,9 +16,9 @@
 			action: false
 		},
 		{
-			href: 'https://amazon.com/author/author_brian_philip',
+			href: '/novels',
 			text: 'Novels',
-			external: true,
+			external: false,
 			action: false
 		},
 		{

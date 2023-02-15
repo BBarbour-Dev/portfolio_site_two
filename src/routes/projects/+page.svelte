@@ -3,7 +3,7 @@
 	import Loader from '../../lib/Loader.svelte';
 
 	export let data;
-	let repos = data.repos;
+	const { repos } = data;
 </script>
 
 <svelte:head>

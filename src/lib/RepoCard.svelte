@@ -2,7 +2,7 @@
 	export let repo;
 </script>
 
-<a href={repo.url} class="grid-card">
+<a href={repo.url} class="grid-card" target="_blank" rel="noopener noreferrer">
 	<div class="project">
 		<div class="repo item">
 			<h2>&#x1F5A5 {repo.name}</h2>
