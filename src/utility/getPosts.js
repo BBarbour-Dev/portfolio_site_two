@@ -11,6 +11,7 @@ const md = Markdown({
 
 async function fetchArticlesByMe(page) {
 	console.log('fetch articles called');
+	console.log('api key', devToApiKey);
 	const data = await fetch(endpointUrl + `?page=${page}`, {
 		method: 'GET',
 		headers: {
@@ -18,7 +19,7 @@ async function fetchArticlesByMe(page) {
 		}
 	});
 
-	console.log('data', data.json().length);
+	console.log('data', data.json());
 	return await data.json();
 }
 
