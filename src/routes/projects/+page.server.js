@@ -7,6 +7,7 @@ const octokit = new Octokit({
 });
 
 export async function load() {
+	console.log('load');
 	try {
 		const query = await octokit.request('GET /users/{username}/repos?sort=created', {
 			username: 'BBarbour-Dev'
