@@ -17,6 +17,8 @@ async function fetchArticlesByMe(page) {
 			API_KEY: devToApiKey
 		}
 	});
+
+	console.log('data', data.json().length);
 	return await data.json();
 }
 
