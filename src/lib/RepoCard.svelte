@@ -36,12 +36,24 @@
 	}
 
 	.grid-card:hover {
-		color: var(--white);
+		border: 2px solid var(--white);
 	}
 
 	.repo h2 {
 		font-size: 1.25rem;
 		color: var(--primary);
+	}
+
+	.grid-card:hover {
+		color: var(--white);
+	}
+
+	.grid-card:hover h2 {
+		color: var(--white);
+	}
+
+	.grid-card:hover .stats {
+		color: var(--text);
 	}
 
 	.created {
