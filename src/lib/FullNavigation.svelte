@@ -10,13 +10,12 @@
 	</div>
 	<div class="nav-right">
 		{#each links as link}
-			<div class={link.action && 'resume-button'}>
 				<a
+					class={link.action ? 'resume-button' : ''}
 					href={link.href}
 					target={link.external ? '_blank' : ''}
-					rel={link.external && 'noopener noreferrer'}>{link.text}</a
+					rel={link.external ? 'noopener noreferrer' : ''}>{link.text}</a
 				>
-			</div>
 		{/each}
 	</div>
 </nav>
@@ -53,16 +52,18 @@
 
 	.nav-right a {
 		display: block;
-		margin: 1rem;
 		text-align: center;
+		padding: 1rem;
 	}
 
 	.resume-button {
 		background-color: var(--primary);
-	}
-
-	.resume-button a {
 		text-decoration: none;
 		color: var(--background);
+		cursor: pointer;
+	}
+
+	.resume-button:hover {
+		background-color: var(--white);
 	}
 </style>
