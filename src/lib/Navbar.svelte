@@ -1,26 +1,36 @@
-<nav>
-	<a class="home-link" href="/">bbarbour.dev</a>
-	<div class="nav-right">
-		<a href="/articles">Articles</a>
-		<a href="/projects">Projects</a>
-		<a href="https://drive.google.com/file/d/1kV6Lo8Md7BCJ_Fe7pzGxReVKGyZsHNvr/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
-	</div>
-</nav>
+<script>
+	import FullNavigation from './FullNavigation.svelte';
+	import MobileNavigation from './MobileNavigation.svelte';
 
-<style>
-	nav {
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-	}
+	const links = [
+		{
+			href: '/blog',
+			text: 'Tech Blog',
+			external: false,
+			action: false
+		},
+		{
+			href: '/projects',
+			text: 'Coding Projects',
+			external: false,
+			action: false
+		},
+		{
+			href: 'https://amazon.com/author/author_brian_philip',
+			text: 'Novels',
+			external: true,
+			action: false
+		},
+		{
+			href: 'https://drive.google.com/file/d/1kV6Lo8Md7BCJ_Fe7pzGxReVKGyZsHNvr/view?usp=sharing',
+			text: 'Resume',
+			external: true,
+			action: true
+		}
+	];
 
-	.home-link {
-		letter-spacing: 3px;
-		font-weight: bold;
-		flex: 1;
-	}
+	let drawerOpen = false;
+</script>
 
-	.nav-right a {
-		padding: 0.5rem;
-	}
-</style>
+<FullNavigation {links} class="nav" />
+<MobileNavigation {links} class="nav" />

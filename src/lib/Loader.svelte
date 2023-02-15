@@ -19,12 +19,12 @@
 		align-content: center;
 		justify-content: center;
 		z-index: 100000;
-		margin-top: 3rem;
+		margin: 3rem 0;
 	}
 
 	.loader_element {
 		border-radius: 100%;
-		border: var(--size) solid #4bffd8dc;
+		border: var(--size) solid var(--primary);
 		margin: calc(var(--size) * 2);
 	}
 
