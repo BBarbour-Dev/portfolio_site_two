@@ -19,7 +19,6 @@ async function fetchArticlesByMe(page) {
 		}
 	});
 
-	console.log('data', data.json());
 	return await data.json();
 }
 
