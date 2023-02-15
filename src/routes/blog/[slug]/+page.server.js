@@ -7,6 +7,7 @@ export async function load({ params }) {
 			posts: await getPosts({ limit: 1, slug: params.slug })
 		};
 	} catch (err) {
+		console.error(err);
 		throw error(500, 'Internal Server Error');
 	}
 }

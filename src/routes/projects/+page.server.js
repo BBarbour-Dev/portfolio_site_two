@@ -28,6 +28,7 @@ export async function load() {
 			repos
 		};
 	} catch (err) {
+		console.error(err);
 		throw error(500, 'Internal Server Error');
 	}
 }
