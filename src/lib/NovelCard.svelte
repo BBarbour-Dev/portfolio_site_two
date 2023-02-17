@@ -4,7 +4,7 @@
 
 <a href={novel.url} class="card" target="_blank" rel="noopener noreferrer">
 	<div class="cover-image">
-		<img alt="phasematter cover" src={novel.cover} />
+		<img alt={novel.title} src={novel.cover} />
 	</div>
 	<div class="content">
 		<h2>{novel.title}</h2>
@@ -47,7 +47,11 @@
 	}
 
 	.cover-image {
-		width: 160px;
+		height: 500px;
+	}
+
+	.cover-image img {
+		height: 100%;
 	}
 
 	.content {

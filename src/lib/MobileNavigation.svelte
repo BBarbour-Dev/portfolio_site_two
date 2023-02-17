@@ -23,10 +23,9 @@
 			<div class="mobile-logo">
 				<span>bbarbour.dev</span>
 			</div>
-			<div>
-				<div class="mobile-logo little">
-					<span>Main Menu</span>
-				</div>
+			<div class="mobile-logo">
+				<span>[ Main Menu ]</span>
+			</div>
 				<div class="link"><a href="/">Home</a></div>
 				{#each links as link}
 					<div class="link">
@@ -37,7 +36,6 @@
 						>
 					</div>
 				{/each}
-			</div>
 		</div>
 	{/if}
 </nav>
@@ -75,11 +73,11 @@
 	}
 
 	.mobile-logo {
-		padding: 1rem;
+		padding-bottom: .5rem;
 	}
 
 	.mobile-logo span {
-		font-size: 0.8rem;
+		font-size: 0.65rem;
 		text-align: center;
 		font-family: 'Press Start 2P';
 		color: var(--background);
@@ -91,13 +89,13 @@
 	}
 
 	.link {
-		display: flex;
+		/* display: flex;
 		justify-content: center;
-		align-items: flex-end;
+		align-items: flex-end; */
+		margin-bottom: .5rem;
 	}
 
 	.link a {
-		margin: 0.5rem 0;
 		text-align: center;
 		font-size: 1.25rem;
 		color: #030c2e;
@@ -106,10 +104,6 @@
 
 	.link a:hover {
 		color: #ffffff;
-	}
-
-	.little span {
-		font-size: 0.65rem;
 	}
 
 	.close {
