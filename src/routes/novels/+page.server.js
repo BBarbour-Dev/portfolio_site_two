@@ -3,7 +3,7 @@ import config from '../../config/index';
 
 const sanityAuthToken = config.SANITY_AUTH_TOKEN;
 const queryURL =
-	'https://r0ohisby.api.sanity.io/v2021-10-21/data/query/author?query=*[_type == "novel"]';
+	'https://r0ohisby.api.sanity.io/v2021-10-21/data/query/author?query=*[_type == "novel"]{...,"cover":cover.asset->url}';
 
 export async function load() {
 	try {

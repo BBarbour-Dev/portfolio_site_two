@@ -4,7 +4,7 @@
 
 <a href={novel.url} class="card" target="_blank" rel="noopener noreferrer">
 	<div class="cover-image">
-		<img alt={novel.title} src={novel.cover} />
+		<img alt={novel.title} src={`${novel.cover}?h=500`} />
 	</div>
 	<div class="content">
 		<h2>{novel.title}</h2>
