@@ -5,7 +5,7 @@
 
 :root {
 	--background: #030c2e;
-	--text: #8693a4;
+	--text: #acbcd2;
 	--dark-text: #706f7c;
 	--primary: #4bffd8;
 	--dark: #005c48;
@@ -15,6 +15,7 @@
 body {
 	background-color: var(--background);
 	color: var(--text);
+	font-size: 1.25rem
 }
 
 a {
