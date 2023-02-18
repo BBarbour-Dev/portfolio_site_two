@@ -34,8 +34,8 @@
 	}
 
 	.home-link a {
-		font-family: 'Press Start 2P', Helvetica;
-		font-size: 0.8rem;
+		font-family: 'Press Start 2P';
+		font-size: 1.25rem;
 		display: block;
 		text-decoration: none;
 		font-weight: bold;

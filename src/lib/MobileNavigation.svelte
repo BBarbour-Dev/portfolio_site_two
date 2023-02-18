@@ -20,11 +20,11 @@
 	{#if drawerOpen}
 		<div class="drawer">
 			<button class="close">&times;</button>
-			<div class="mobile-logo">
-				<span>bbarbour.dev</span>
+			<div>
+				<span class="mobile-logo">bbarbour.dev</span>
 			</div>
-			<div class="mobile-logo">
-				<span>[ Main Menu ]</span>
+			<div>
+				<span class="mobile-logo main-menu">Main Menu</span>
 			</div>
 				<div class="link"><a href="/">Home</a></div>
 				{#each links as link}
@@ -73,11 +73,11 @@
 	}
 
 	.mobile-logo {
-		padding-bottom: .5rem;
+		margin-bottom: 1rem;
 	}
 
-	.mobile-logo span {
-		font-size: 0.65rem;
+	.mobile-logo {
+		font-size: 1rem;
 		text-align: center;
 		font-family: 'Press Start 2P';
 		color: var(--background);
@@ -85,25 +85,27 @@
 		display: block;
 		text-decoration: none;
 		font-weight: bold;
-		text-shadow: 1px 1px #8693a4;
+	}
+
+	.main-menu {
+		font-size: .75rem;
 	}
 
 	.link {
-		/* display: flex;
-		justify-content: center;
-		align-items: flex-end; */
-		margin-bottom: .5rem;
+		margin-bottom: 1rem;
 	}
 
 	.link a {
 		text-align: center;
-		font-size: 1.25rem;
-		color: #030c2e;
+		font-size: .75rem;
+		color: var(--background);
 		display: block;
+		font-family: "Press Start 2P";
+		text-underline-offset: 0%;
 	}
 
 	.link a:hover {
-		color: #ffffff;
+		color: var(--dark-text);
 	}
 
 	.close {
@@ -114,7 +116,7 @@
 		margin-left: 50px;
 		border: none;
 		background-color: transparent;
-		color: #030c2e;
+		color: var(--background);
 	}
 
 	.mobile-nav {
@@ -126,7 +128,7 @@
 		z-index: 1;
 		bottom: 0;
 		right: 0;
-		background-color: #2fc7a6;
+		background-color: var(--primary);
 		overflow-x: hidden;
 		transition: 0.3s;
 	}
