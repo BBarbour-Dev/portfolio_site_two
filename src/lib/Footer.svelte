@@ -16,7 +16,7 @@
 			>
 		</div>
 		<p class="footer-text small">
-			Handcrafted with love using SvelteKit. ©{year} <a href="http://bbarbour.dev">bbarbour.dev</a>
+			Handcrafted with love using SvelteKit. ©{year} <a href="http://bbarbour.dev">bbarbour.dev</a>.
 		</p>
 	</div>
 </footer>
