@@ -8,11 +8,18 @@
 	</div>
 	<div class="content">
 		<h2>{novel.title}</h2>
-		<p><strong>Published:</strong> {new Date(novel.published).toLocaleDateString()} &middot {novel.pages} Pages</p>
-		<p><strong>${novel.priceUsd.toFixed(2)}</strong> &middot; {novel.ku ? 'Free On Kindle Unlimited' : ''} </p>
+		<p>
+			<strong>Published:</strong>
+			{new Date(novel.published).toLocaleDateString()} &middot {novel.pages} Pages
+		</p>
+		<p>
+			<strong>${novel.priceUsd.toFixed(2)}</strong> &middot; {novel.ku
+				? 'Free On Kindle Unlimited'
+				: ''}
+		</p>
 		<div class="genres">
 			{#each novel.genres as genre}
-			<p class="genre">{genre}</p>
+				<p class="genre">{genre}</p>
 			{/each}
 		</div>
 		<p class="description">{novel.description}</p>
@@ -35,6 +42,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: 1rem;
+		margin-bottom: 4rem;
 	}
 
 	.card:hover {
@@ -59,7 +67,7 @@
 	}
 
 	.content p {
-		margin-bottom: .5rem;
+		margin-bottom: 0.5rem;
 	}
 
 	.description {
@@ -69,13 +77,13 @@
 	.genres {
 		display: flex;
 		flex-wrap: wrap;
-		margin-bottom: .5rem;
+		margin-bottom: 0.5rem;
 	}
-	
+
 	.genre {
-		font-size: .8rem;
+		font-size: 0.8rem;
 		display: block;
-		padding: .4rem;
+		padding: 0.4rem;
 		margin-right: 1rem;
 		background-color: var(--primary);
 		color: var(--background);
