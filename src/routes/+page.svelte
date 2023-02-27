@@ -14,11 +14,12 @@
 </div>
 <h3>About Me</h3>
 <p class="about-me">
-    A cup of coffee and code is how I start my typical mornings. Self-improvement, emotional
-    intelligence, and conquering new challenges drive me. Eleven years of experience in the tech
-    industry ingrained a habit of constantly learning new things and staying up to date. I place all my skill
-    points in logic, persistence, and creative writing. I'm a tech and code blogger on dev.to and have 12,000
-    followers. I also author Progression Fantasy and Sci-Fi novels as author Brian Philip.
+	A cup of coffee and code is how I start my typical mornings. Self-improvement, emotional
+	intelligence, and conquering new challenges drive me. Eleven years of experience in the tech
+	industry ingrained a habit of constantly learning new things and staying up to date. I place all
+	my skill points in logic, persistence, and creative writing. I'm a tech and code blogger on dev.to
+	and have 12,000 followers. I also author Progression Fantasy and Sci-Fi novels as author Brian
+	Philip.
 </p>
 <p class="about-me">
 	<strong>Proficient Techs:</strong> HTML5, CSS3, ES6, Node, React, React Native, Git, Vue, Svelte, SASS,
@@ -70,7 +71,6 @@
 
 	.about-me {
 		margin-bottom: 1rem;
-		line-height: 1.5rem;
 	}
 
 	.right {
