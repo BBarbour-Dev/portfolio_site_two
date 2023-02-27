@@ -26,16 +26,16 @@
 			<div>
 				<span class="mobile-logo main-menu">Main Menu</span>
 			</div>
-				<div class="link"><a href="/">Home</a></div>
-				{#each links as link}
-					<div class="link">
-						<a
-							href={link.href}
-							target={link.external ? '_blank' : ''}
-							rel={link.external ? 'noopener noreferrer' : ''}>{link.text}</a
-						>
-					</div>
-				{/each}
+			<div class="link"><a href="/">Home</a></div>
+			{#each links as link}
+				<div class="link">
+					<a
+						href={link.href}
+						target={link.external ? '_blank' : ''}
+						rel={link.external ? 'noopener noreferrer' : ''}>{link.text}</a
+					>
+				</div>
+			{/each}
 		</div>
 	{/if}
 </nav>
@@ -48,8 +48,8 @@
 		border-bottom: 0;
 		box-shadow: none;
 		position: fixed;
-		bottom: 1%;
-		left: 80%;
+		bottom: 3%;
+		left: 75vw;
 	}
 
 	.hamburger button {
@@ -88,7 +88,7 @@
 	}
 
 	.main-menu {
-		font-size: .75rem;
+		font-size: 0.75rem;
 	}
 
 	.link {
@@ -97,10 +97,10 @@
 
 	.link a {
 		text-align: center;
-		font-size: .75rem;
+		font-size: 0.75rem;
 		color: var(--background);
 		display: block;
-		font-family: "Press Start 2P";
+		font-family: 'Press Start 2P';
 		text-underline-offset: 0%;
 	}
 
