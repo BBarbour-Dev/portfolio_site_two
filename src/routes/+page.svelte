@@ -32,7 +32,7 @@
 <h3>Tech Blog Posts</h3>
 <div class="row">
 	<div class="posts">
-		{#if posts}
+		{#if posts && posts.length > 0}
 			{#each posts as post}
 				<Post {post} />
 			{/each}
