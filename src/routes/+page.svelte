@@ -71,7 +71,6 @@
 	h3 {
 		color: var(--primary);
 		text-shadow: 1px 3px var(--dark);
-		padding-bottom: 1rem;
 		margin-bottom: 3rem;
 		font-family: 'Press Start 2P';
 	}
