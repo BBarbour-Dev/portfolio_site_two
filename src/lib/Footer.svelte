@@ -49,7 +49,6 @@
 
 	.social-links a {
 		text-align: center;
-		margin: 0.5rem;
 	}
 
 	@media screen and (max-width: 720px) {
