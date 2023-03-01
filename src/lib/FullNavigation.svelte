@@ -2,7 +2,7 @@
 	export let links;
 </script>
 
-<nav class={`${$$restProps.class || ''} desktop-nav`}>
+<nav class="desktop-nav">
 	<div class="home-link">
 		<div>
 			<a href="/">bbarbour.dev</a>
@@ -11,7 +11,7 @@
 	<div class="nav-right">
 		{#each links as link}
 			<a
-				class={link.action ? 'resume-button' : ''}
+				class={link.action ? 'action-button' : ''}
 				href={link.href}
 				target={link.external ? '_blank' : ''}
 				rel={link.external ? 'noopener noreferrer' : ''}>{link.text}</a
@@ -27,43 +27,55 @@
 		}
 	}
 
+	nav {
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 2px solid var(--primary);
+		width: 100%;
+		padding: 1rem;
+	}
+
 	.home-link {
 		display: flex;
-		flex-grow: 1;
+		margin-top: 0.5rem;
 		align-items: center;
 	}
 
 	.home-link a {
 		font-family: 'Press Start 2P';
-		font-size: 1.25rem;
-		display: block;
 		text-decoration: none;
 		font-weight: bold;
 		text-shadow: 1px 3px var(--dark);
-		margin: 1rem;
-		text-align: center;
 	}
 
 	.nav-right {
 		display: flex;
-		flex-grow: 1;
+		flex-grow: 2;
 		justify-content: right;
+		align-items: center;
+		gap: 1rem;
 	}
 
 	.nav-right a {
-		display: block;
+		font-size: 1.2rem;
+		font-weight: bold;
 		text-align: center;
-		padding: 1rem;
+		line-height: 2rem;
 	}
 
-	.resume-button {
-		background-color: var(--primary);
+	.nav-right .action-button {
+		font-weight: normal;
+		padding: 0.75rem;
+		background-color: var(--background);
 		text-decoration: none;
-		color: var(--background);
+		color: var(--primary);
+		border: 2px solid var(--primary);
+		box-shadow: 2px 2px var(--dark);
 		cursor: pointer;
 	}
 
-	.resume-button:hover {
-		background-color: var(--white);
+	.action-button:hover {
+		background-color: var(--primary);
+		color: var(--background);
 	}
 </style>

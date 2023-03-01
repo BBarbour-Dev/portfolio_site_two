@@ -28,9 +28,7 @@
 			action: true
 		}
 	];
-
-	let drawerOpen = false;
 </script>
 
-<FullNavigation {links} class="nav" />
-<MobileNavigation {links} class="nav" />
+<FullNavigation {links} />
+<MobileNavigation {links} />

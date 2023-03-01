@@ -1,25 +1,29 @@
 <script>
+	import MouseTooltip from './MouseTooltip.svelte';
+
 	export let repo;
 </script>
 
-<a href={repo.url} class="grid-card" target="_blank" rel="noopener noreferrer">
-	<div class="project">
-		<div class="repo item">
-			<h2>&#x1F5A5 {repo.name}</h2>
+<MouseTooltip text="Click to view on Github.">
+	<a href={repo.url} class="grid-card" target="_blank" rel="noopener noreferrer">
+		<div class="project">
+			<div class="repo item">
+				<h2>&#x1F5A5 {repo.name}</h2>
+			</div>
+			<div class="created item">
+				<p>Created &middot; {new Date(repo.created).toLocaleDateString()}</p>
+			</div>
+			<div class="description item">
+				<p>{repo.description}</p>
+			</div>
+			<div class="stats item">
+				<p>&#x2B50 {repo.stargazers}</p>
+				<p>&#x1F531 {repo.forks}</p>
+				<p>&#x1F441 {repo.watchers}</p>
+			</div>
 		</div>
-		<div class="created item">
-			<p>Created &middot; {new Date(repo.created).toLocaleDateString()}</p>
-		</div>
-		<div class="description item">
-			<p>{repo.description}</p>
-		</div>
-		<div class="stats item">
-			<p>&#x2B50 {repo.stargazers}</p>
-			<p>&#x1F531 {repo.forks}</p>
-			<p>&#x1F441 {repo.watchers}</p>
-		</div>
-	</div>
-</a>
+	</a>
+</MouseTooltip>
 
 <style>
 	.grid-card {
@@ -42,18 +46,6 @@
 	.repo h2 {
 		font-size: 1.25rem;
 		color: var(--primary);
-	}
-
-	.grid-card:hover {
-		color: var(--white);
-	}
-
-	.grid-card:hover h2 {
-		color: var(--white);
-	}
-
-	.grid-card:hover .stats {
-		color: var(--text);
 	}
 
 	.created {
