@@ -33,11 +33,11 @@
 	}
 
 	article {
-		margin-top: 3rem;
+		margin-top: 1.5rem;
 	}
 
 	.dev {
-		margin-top: 0.5rem;
+		margin-top: 1.5rem;
 	}
 
 	.posted {
