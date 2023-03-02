@@ -26,7 +26,7 @@
 		<strong>Technologies:</strong> HTML5, CSS3, ES6, Node, React, React Native, Git, Vue, Svelte, SASS,
 		Splunk, Bamboo, Autosys, Service Now, Jira, AppD, Java, Spring Boot, AWS, Production Support
 	</p>
-	<a href="/projects" class="view">View Coding Projects</a>
+	<a href="/projects" class="view">...View Coding Projects</a>
 </div>
 
 <h3>Tech Blog Posts</h3>
@@ -38,7 +38,7 @@
 			{/each}
 		{/if}
 	</div>
-	<a href="/blog" class="view">View All Posts</a>
+	<a href="/blog" class="view">...View All Posts</a>
 </div>
 
 <style>
