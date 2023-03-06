@@ -15,7 +15,7 @@
 		class="mobile-nav"
 		on:click={toggleDrawer}
 		on:keydown={toggleDrawer}
-		style={drawerOpen && 'visibility: visible; width: 350px;'}
+		style={drawerOpen && 'visibility: visible; width: 80vw;'}
 	>
 		{#if drawerOpen}
 			<div class="drawer">
@@ -66,20 +66,22 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		align-items: center;
+		gap: 0.5rem;
 		overflow: hidden;
 		transition: 0.3s;
 	}
 
 	.mobile-logo {
-		font-size: 1rem;
+		font-size: 1.25rem;
 		text-align: center;
-		font-family: 'Press Start 2P';
 		color: var(--background);
 		letter-spacing: 2px;
 		display: block;
 		text-decoration: none;
 		font-weight: bold;
 		margin-bottom: 1rem;
+		font-family: 'Press Start 2P';
 	}
 
 	.link {
@@ -88,10 +90,9 @@
 
 	.link a {
 		text-align: center;
-		font-size: 1rem;
+		font-size: 1.25rem;
 		color: var(--background);
 		display: block;
-		line-height: 1rem;
 	}
 
 	.link a:hover {
@@ -102,7 +103,7 @@
 		position: absolute;
 		bottom: 0;
 		right: 25px;
-		font-size: 2.25rem;
+		font-size: 4rem;
 		margin-left: 50px;
 		border: none;
 		background-color: transparent;
@@ -112,8 +113,7 @@
 	.mobile-nav {
 		display: none;
 		visibility: hidden;
-		height: 350px;
-		width: 0%;
+		height: 100vh;
 		position: fixed;
 		z-index: 1;
 		bottom: 0;
